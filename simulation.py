@@ -33,7 +33,7 @@ m = 2.0
 # stepsize
 h = 0.5
 # default max_t
-max_t = 100
+max_t = 30
 
 # ============ #
 # matrix terms #
@@ -178,6 +178,6 @@ reset_abc()
 gauss_seidel(int(max_t/h))
 
 ani = animation.FuncAnimation(fig, animate, frames=len(X), interval=70, init_func=init)
-# ani.save('animation.gif', writer='imagemagick', fps=30)
+# ani.save('animation.gif', writer='imagemagick', fps=15)
 
 plt.show()
